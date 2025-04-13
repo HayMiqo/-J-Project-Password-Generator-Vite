@@ -5,7 +5,7 @@
     height: 100vh;
     margin: 0 auto;
     margin: 0 auto;
-    width: 1600px;
+    max-width: 1600px;
 }
 
 body{
@@ -13,6 +13,9 @@ body{
     font-family: 'roboto';
     color: #FFFFFF;
     background-image: linear-gradient(to right, #0F1115, #1A1D23);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     .header{
 
 
@@ -25,6 +28,7 @@ body{
             .password__title{
                 margin-top: 70px;
                 font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
             }
 
             .password__button{
@@ -68,5 +72,19 @@ body{
                 box-shadow: none;
             }
         }
+    }
+}
+
+
+
+@media(max-width: 519px) {
+    .password__title{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 405px) {
+    .password__title {
+        font-size: 20px;
     }
 }
