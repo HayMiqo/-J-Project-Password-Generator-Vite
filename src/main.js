@@ -3,6 +3,15 @@ import './style.scss'
 const passwordField = document.querySelector('.password__field')
 const generateBtn = document.querySelector('.password__button')
 
+passwordField.addEventListener('click', async () =>{
+    try{
+        await navigator.clipboard.writeText(passwordField.value)
+        alert('Текст скопирован!')
+    } catch (err){
+        console.error('Ошибка копирования', err)
+    }
+});
+
 function passwordGeneration() {
     const lowercase = 'abcdefghijklmnopqrstuvwxyz'
     const uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
