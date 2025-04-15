@@ -11,8 +11,12 @@
       <div class="container">
         <div class="password__section">
           <h1 class="password__title">↓ СГЕНЕРИРУЙ СВОЙ ПАРОЛЬ ↓</h1>
-          <input type="text" readonly  class="password__field">
-          <p class="password__clue">нажми на поле чтобы скопировать</p>
+          <div class="input__wrapper">
+            <input type="text" readonly class="password__field">
+            <p class="password__clue">нажми на поле чтобы скопировать</p>
+              <input type="number" min="6" max="32" class="password__count" placeholder="Введите количесвто символов">
+          </div>
+        
           <button type="button" class="password__button">
             СГЕНЕРИРОВАТЬ
           </button>
